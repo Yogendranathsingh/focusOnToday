@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Focus-On-Today</title>
+</head>
+<style>
+    *{
+        margin: 0;padding: 0;box-sizing: border-box;
+    }
+    main{
+        width: 600px;
+        border: 2px solid yellow;
+        height: 100%;
+        margin: auto;
+        padding: 50px;
+        margin-top: 40px;
+    }
+
+    .heading{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .upper2{
+        margin-top: 40px;
+    }
+
+    .upper2 .completion-bar{
+        margin-top: 10px;
+        height: 20px;
+        background-color:rgb(237, 235, 231);
+    }
+
+    .lower{
+        margin-top: 30px;
+    }
+
+    .input-bar{
+        margin-top: 15px;
+        display: flex;
+        border: 1px solid blue;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .input-bar .circle{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border: 1px solid blue;
+        margin-right: 10px;
+    }
+
+    .checked{
+        background-color: green; 
+    }
+
+    .input-bar input{
+        height: 30px;
+        width: 100%;
+        font-size: 15px;
+        outline: none;
+    }
+
+    .text-red{
+        color: red;
+    }
+
+    .progress{
+        height: 100%;
+        width: 0px;
+        min-width: fit-content;
+        background-color: rgb(47, 248, 47);
+        display:;
+    }
+</style>
+<body>
+    <div class="heading">Focus On Today</div>
+    <main>
+    <div class="upper1">Today</div>
+
+    <div class="upper2">
+    <div class="text-bar">Raise the bar by completing your goals!</div>
+    <div class="completion-bar">
+        <div class="progress"></div>
+    </div>
+    </div>
+    <div class="lower">
+        <div class="text-bar">Please set all 3 goals</div>
+        <div class="input-bar">
+        <div class="circle"><svg width="100%" height="100%" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 4.11111L3.20098 7.12635C3.54481 7.59737 4.21708 7.67546 4.65973 7.29581L12 1" stroke="#F7F7F7" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            </div>
+        <input id="first" type="text">
+        </div>
+
+        <div class="input-bar">
+            <div class="circle">
+                <svg width="100%" height="100%" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4.11111L3.20098 7.12635C3.54481 7.59737 4.21708 7.67546 4.65973 7.29581L12 1" stroke="#F7F7F7" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <input id="second" type="text">
+        </div>
+
+        <div class="input-bar">
+            <div class="circle">
+                <svg width="100%" height="100%" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4.11111L3.20098 7.12635C3.54481 7.59737 4.21708 7.67546 4.65973 7.29581L12 1" stroke="#F7F7F7" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <input id="third" type="text">
+        </div>
+    </div>
+    </main>
+
+    <script src="scrpit.js"></script>
+</body>
+</html>
